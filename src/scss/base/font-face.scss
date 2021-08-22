@@ -4,7 +4,7 @@
   @font-face {
     font-family: Raleway;
     src: 
-      local('sans serif'),
+      local('Raleway #{$value}'), local('Raleway-#{$value}'),
       url('../fonts/Raleway/Raleway-#{$value}.ttf') format('truetype');
     font-style: normal;
     font-weight: #{$key};
@@ -14,7 +14,7 @@
   @font-face {
     font-family: OpenSans;
     src: 
-      local('sans serif'),
+      local('OpenSans #{$value}'), local('OpenSans-#{$value}'),
       url('../fonts/OpenSans/OpenSans-#{$value}.ttf') format('truetype');
     font-style: normal;
     font-weight: #{$key};
