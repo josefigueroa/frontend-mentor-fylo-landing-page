@@ -1,19 +1,21 @@
-// 576px, 768px, 992px, 1200px, 1400px
+//BREAKPOINTS
+// 576px, 768px, 992px, 1200px, 1440px, 1444px
 $breakpoints-up: (
-  'small': '36em'
+  'small': '36em',
 	'medium': '48em',
 	'large': '62em',
 	'xlarge': '75em',
-	'xxlarge': '87.5em',
+	'xxlarge': '90em',
+	'xxxlarge': '90.25em'
 );
 
-// 575px, 767px, 991px, 1199px, 1399px
+// 575px, 767px, 991px, 1199px, 1439px
 $breakpoints-down: (
 	'small': '35.9375em',
 	'medium': '47.9375em',
 	'large': '61.9375em',
 	'xlarge': '75.9375em',
-	'xxlarge': '87.4375em',
+	'xxlarge': '89.9375em'
 );
 
 $spacer: 1rem;
@@ -26,3 +28,57 @@ $spacer: (
   4: ($spacer * 1.5),
   5: ($spacer * 3)
 );
+
+$ebonyClay: hsl(219, 30%, 18%); //testimonials background
+$mirageLight:  hsl(218, 28%, 13%); //main background 
+$mirage: hsl(217, 28%, 15%); //intro and email sign up background (first)
+$firefly: hsl(216, 53%, 9%); //footer background
+$blue: hsl(198, 60%, 50%);
+$cyan: hsl(176, 68%, 64%);
+$red: hsl(0, 100%, 63%);
+$white: hsl(0, 0%, 100%);
+
+$colors: (
+	"ebonyClay": $ebonyClay,
+	"mirageLight": $mirageLight,
+	"mirage": $mirage,
+	"firefly": $firefly,
+	"blue": $blue,
+	"cyan": $cyan,
+	"red": $red,
+	"white": $white
+);
+
+$primary: $mirageLight;
+$secondary: $mirage;
+$info: $blue;
+$info-alt: $cyan;
+$danger: $red;
+$white: $white;
+$black: $ebonyClay;
+$dark: $firefly;
+
+$theme-colors: (
+	'primary': $primary,
+	'secondary': $secondary,
+	'info': $info,
+	'info-alt': $info-alt,
+	'danger': $danger,
+	'white': $white,
+	'black': $black,
+	'dark': $dark
+);
+
+$theme-fonts: (
+	400: 'Regular',
+	700: 'Bold'
+);
+
+$font-family-base: OpenSans;
+$font-family-alt: Raleway;
+$font-size-base: 14px;
+$font-weight-base: 400;
+
+$height-bg-curvy-mobile: 141px;
+
+$img-path: '../images/';

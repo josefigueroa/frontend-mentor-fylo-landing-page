@@ -1,0 +1,22 @@
+@use '../abstratcs/' as *;
+
+body{
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  background: $secondary;
+  color: $white;
+}
+
+a{
+  color: $white;
+}
+
+p{
+  line-height: rem(21);
+  margin-bottom: rem(16);
+  &:last-child{
+    margin-bottom: 0;
+  }
+ 
+}

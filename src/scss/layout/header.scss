@@ -1,0 +1,62 @@
+@use '../abstratcs/' as *;
+
+.header{
+  padding-top: rem(20);
+  padding-left: rem(18);
+  padding-right: rem(22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(72);
+  font-family: $font-family-alt;
+  @include container-custom(1200);  
+ 
+  @include breakpoint('medium'){
+    padding-top: rem(72);   
+  }
+  @include breakpoint('xxlarge'){
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__logo{
+    width: 74px;
+    height: 25px;
+    @include breakpoint('medium'){
+      width: 177px;
+      height: 52px;
+    }
+  }
+  &__list{
+    display: flex;
+  }
+
+  &__item{
+    &:not(:last-child){
+      padding-right: rem(22);     
+      @include breakpoint('medium'){
+        padding-right: rem(55);
+      }
+    }
+    @include breakpoint('medium'){
+      font-size: rem(16);
+      
+    }
+  }
+
+  &__link{
+    letter-spacing: 0.30px;
+    &:hover{
+      letter-spacing: 0;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+
+  &__img{
+    @include container-custom(710);
+    padding-left: rem(31);
+    padding-right: rem(31);
+  }
+
+}

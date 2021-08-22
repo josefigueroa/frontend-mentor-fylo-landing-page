@@ -1,0 +1,49 @@
+@use '../abstratcs/' as *;
+
+.form{  
+  &--inline{   
+    min-height: rem(67);
+    @include breakpoint('medium'){
+      display: flex;
+      align-items: start;
+    }  
+  }  
+ 
+  &__group{
+    width: 100%;
+    margin-bottom: rem(20);
+    text-align-last: left;
+    @include breakpoint('medium'){
+      margin-bottom: 0;
+      flex: 1 0 66%;
+    }  
+    &--inline{
+      margin-right: rem(40);
+      @include breakpoint('medium'){
+        margin-bottom: 0;
+      }   
+    }      
+  }
+  input{
+    transition: .2s ease;
+    height: rem(48);
+    border-radius: rem(50);
+    padding-left: rem(40);
+    width: 100%;
+    border: 0;
+  }
+
+  &--error{
+    input{
+      border: 2px solid $danger;
+      &:focus-visible{
+        outline: 1px solid $danger;
+      }
+    }
+  }
+  &__error{
+    display: none;
+    color: $danger;
+    padding-left: rem(40);
+  }
+}

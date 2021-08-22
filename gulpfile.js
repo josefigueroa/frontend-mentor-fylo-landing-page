@@ -26,7 +26,7 @@ function htmlTask(){
 }
 
 function fontsTask(){
-	return src('src/fonts/**/*.woff')
+	return src('src/fonts/**/*.ttf')
 		.pipe(dest(config.fontsDir));
 }
 

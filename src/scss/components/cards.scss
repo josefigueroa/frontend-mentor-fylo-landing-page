@@ -1,0 +1,99 @@
+@use '../abstratcs/' as *;
+
+.card-group{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(18);
+  position: relative;
+  @include breakpoint('medium'){
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(40);
+  }
+  &--quotes{
+    transform: translate(0px, 0px);
+    .card{
+      &:first-child{
+        position: relative;
+        &:before{
+          content: url('../images/bg-quotes.png');
+          position: absolute;
+          z-index: -1;
+          top: rem(-34);
+          left: rem(-10);
+        }
+      }
+    }
+  }
+ 
+  
+}
+
+.card{
+  background-color: $black;
+  border-radius: rem(5);
+  padding: rem(20);
+  position: relative;
+  box-shadow: 10px 6px 5px 0px rgb(0 0 0 / 20%);   
+  @include breakpoint('medium'){
+    padding: rem(32);
+  }
+  &--centered{
+    text-align: center;
+  }
+  &__quotes{
+    position: absolute;
+    bottom: calc(100% - 5px);
+    width: 25px;
+    height: 20px;
+    left: rem(38);
+    @include breakpoint('medium'){
+      bottom: calc(100% - 12px);
+      width: 55px;
+      height: 45px;
+      left: rem(25);
+    }
+    
+  }
+  &__title{
+    line-height: normal;
+    
+    @include breakpoint('medium'){
+      font-size: rem(30);
+      margin-bottom: rem(25);
+    }
+  }
+  &__text{
+    margin-bottom: rem(25);
+    &--centered{
+      margin-bottom: rem(20);
+      @include breakpoint('medium'){
+        @include container-custom(620);
+        margin-bottom: rem(40);
+      }
+      
+    }
+  }
+  &__profile{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  &__img{
+    width: rem(30);
+    height: rem(30);
+    margin-right: rem(10);
+    img{
+      border-radius: 50%;
+    }    
+  }
+  &__username{
+    margin-bottom: rem(5);
+    font-size: rem(12);
+    line-height: normal;
+  }
+  &__company{
+    display: block;
+    font-size: rem(10);
+  }
+}

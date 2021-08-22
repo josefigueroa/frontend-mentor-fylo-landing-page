@@ -1,4 +1,12 @@
+@use 'functions' as *;
 @use 'variables' as *;
+
+@mixin container-custom($width: 1200) {
+	width: 100%;
+	max-width: rem($width);
+	margin-left: auto;
+	margin-right: auto;
+}
 
 @mixin breakpoint($size) {
 	@media (min-width: map-get($breakpoints-up, $size)) {

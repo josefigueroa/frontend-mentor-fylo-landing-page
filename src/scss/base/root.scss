@@ -1,0 +1,11 @@
+@use '../abstratcs/' as *;
+
+:root{
+  @each $key, $value in $theme-colors {
+    --#{$key}: #{$value};
+  }
+
+  @each $key, $value in $theme-fonts {
+    --font-#{$value}: #{$key};
+  }
+}

@@ -1,0 +1,19 @@
+@use '../abstratcs/' as *;
+
+@each $key, $value in $theme-fonts {
+  @font-face {
+    font-family: Raleway;
+    src: url('../fonts/Raleway/Raleway-#{$value}.ttf') format('truetype');
+    font-style: normal;
+    font-weight: #{$key};
+    text-rendering: optimizeLegibility;
+  }
+
+  @font-face {
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans/OpenSans-#{$value}.ttf') format('truetype');
+    font-style: normal;
+    font-weight: #{$key};
+    text-rendering: optimizeLegibility;
+  }
+}

@@ -1,0 +1,14 @@
+@use '../abstratcs/' as *;
+
+.container{
+  width: 100%;
+  max-width: rem(1160);
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: rem(15);
+  padding-left: rem(15);
+  @include breakpoint('large'){
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

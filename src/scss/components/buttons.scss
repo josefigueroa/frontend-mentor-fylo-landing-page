@@ -1,0 +1,37 @@
+@use '../abstratcs/' as *;
+
+
+.btn{
+  display: inline-block;
+  padding: rem(15) rem(20);
+  min-height: rem(56);
+  width: 100%;
+  border-radius: rem(50);
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  
+  &--gradient{
+    transition: 0.5s;    
+    background: linear-gradient(to right, hsl(176, 68%, 64%),  hsl(198, 60%, 50%)) 0/100% !important;
+    color: $white !important;
+    
+    &:hover{
+      background: linear-gradient(to right, hsl(176, 68%, 64%),  hsl(198, 60%, 50%)) 0/300% !important;
+    }
+  }
+  &--small{
+    height: rem(48);
+    min-height: rem(48);
+  }
+}
+
+@each $key, $value in $theme-colors {
+  $color-invert: findColorInvert($value);
+  .btn--#{$key}{
+    background: $value;
+    color: $color-invert;
+  }  
+}
+

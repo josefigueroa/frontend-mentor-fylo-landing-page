@@ -1,0 +1,38 @@
+@use '../abstratcs/' as *;
+
+h1,
+.h1{
+  margin-top: 0;
+  font-size: rem(23);
+  line-height: rem(36);
+  font-family: $font-family-alt;
+  font-weight: 700;
+  @include breakpoint('medium'){
+    font-size: rem(40);
+    line-height: rem(60);
+  }
+}
+
+h2,
+.h2{
+  margin-top: 0;
+  font-size: rem(18);
+  font-family: $font-family-alt;
+  font-weight: 700;
+  @include breakpoint('medium'){
+    font-size: rem(36);
+    line-height: rem(60);
+  }
+}
+
+h3, 
+.h3{
+  margin-top: 0;
+  font-size: rem(18);
+  font-family: $font-family-alt;
+  font-weight: 700;
+  @include breakpoint('medium'){
+    font-size: rem(30);
+    line-height: rem(60);
+  }
+}
