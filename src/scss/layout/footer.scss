@@ -19,6 +19,7 @@
     margin-bottom: rem(40);
   }
   &__grid{
+    margin-bottom: rem(25);
     @include breakpoint('medium'){
       display: flex;
       justify-content: space-between;
@@ -147,9 +148,6 @@
         vertical-align: middle;
       }
     }
-  }
-  &__attribution{
-    
   }
   
 }
