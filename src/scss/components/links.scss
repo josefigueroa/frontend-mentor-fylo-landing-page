@@ -10,9 +10,7 @@
     &::before{
       border-bottom: 1px solid $white;
     }
-    &::after{
-      background-image: url('../images/icon-arrow-white.svg');      
-    }
+    
   }
   &::before{
     content: '';
@@ -23,15 +21,25 @@
     left: 0;
     transition: .4s;
   }
-  &::after{
-    content: '';
-    background-image: url('../images/icon-arrow.svg');
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    margin-left: rem(8);
-    transition: .4s;    
+  &--arrow{
+    &::after{
+      content: '';
+      background-image: url('../images/icon-arrow.svg');
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+      margin-left: rem(8);
+      transition: .4s;    
+    }
+    &:hover{
+      color: $white;
+      transition: .4s;
+      &::after{
+        background-image: url('../images/icon-arrow-white.svg');      
+      }
+    }
   }
+  
   
 }
