@@ -25,7 +25,7 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Github](https://github.com/josefigueroa/frontend-mentor-fylo-landing-page-with-two-column-layout)
+- Solution URL: [Github](https://github.com/josefigueroa/frontend-mentor-fylo-landing-page)
 - Live Site URL: [https://josefigueroa-fylo-landing-pages.netlify.app](https://josefigueroa-fylo-landing-pages.netlify.app)
 
 ## My process
